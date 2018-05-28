@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ray9527.github.io/post/20180528/fisrt/</loc>
+    <lastmod>2018-05-28T23:26:52+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ray9527.github.io/post/20180523/second/</loc>
     <lastmod>2018-05-23T10:56:03+08:00</lastmod>
   </url>
@@ -24,7 +29,7 @@
   
   <url>
     <loc>https://ray9527.github.io/post/</loc>
-    <lastmod>2018-05-23T10:56:03+08:00</lastmod>
+    <lastmod>2018-05-28T23:26:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -35,7 +40,7 @@
   
   <url>
     <loc>https://ray9527.github.io/</loc>
-    <lastmod>2018-05-23T10:56:03+08:00</lastmod>
+    <lastmod>2018-05-28T23:26:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
