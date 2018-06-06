@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>zray 的博客</title>
+  <title>集合转数组 toArray 方法注意点 &middot; zray 的博客</title>
 
   
   <link type="text/css" rel="stylesheet" href="https://ray9527.github.io/css/print.css" media="print">
@@ -23,7 +23,7 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ray9527.github.io/index.xml" rel="alternate" type="application/rss+xml" title="zray 的博客" />
+  <link href="" rel="alternate" type="application/rss+xml" title="zray 的博客" />
 
   
 </head>
@@ -48,54 +48,35 @@
 </div>
 
     <div class="content container">
-    <div class="posts">
-<div class="post">
-  <h1 class="post-title">
-    <a href="https://ray9527.github.io/post/20180606/first/">集合转数组 toArray 方法注意点</a>
-  </h1>
+    <div class="post">
+  <h1>集合转数组 toArray 方法注意点</h1>
   <span class="post-date">Wed, Jun 6, 2018</span>
   <p>集合转数组 toArray 方法注意点：</p>
 
 <p></p>
-  
-  <div class="read-more-link">
-    <a href="/post/20180606/first/">Read More…</a>
-  </div>
-  
-</div><div class="post">
-  <h1 class="post-title">
-    <a href="https://ray9527.github.io/post/20180523/second/">学习路径</a>
-  </h1>
-  <span class="post-date">Wed, May 23, 2018</span>
-  <p>记录下自己当前在工作中还需要学习的东西：</p>
 
-<p></p>
-  
-  <div class="read-more-link">
-    <a href="/post/20180523/second/">Read More…</a>
-  </div>
-  
-</div><div class="post">
-  <h1 class="post-title">
-    <a href="https://ray9527.github.io/post/20180514/first/">for循环的几种形式</a>
-  </h1>
-  <span class="post-date">Mon, May 14, 2018</span>
-  <p>比较了下普通for循环、iterator循环、增强for循环，主要看下增强for循环的原理：
-</p>
-  
-  <div class="read-more-link">
-    <a href="/post/20180514/first/">Read More…</a>
-  </div>
-  
-</div><div class="post">
-  <h1 class="post-title">
-    <a href="https://ray9527.github.io/about/">About</a>
-  </h1>
-  <span class="post-date">Mon, May 14, 2018</span>
-  使用hugo+github pages 搭建的博客，页面方面比较简陋，之后会慢慢改善下模版。内容上会把之前的笔记以及当下学习的心得放在上面。todo。
-  
+<pre><code class="language-java">private static void toArrayTest() {
+        List&lt;Integer&gt; list = new ArrayList&lt;&gt;(Arrays.asList(1,2,3,4,5));
+        /*
+            使用带参的toArray方法的几个注意点
+            1.如果 array.length = list.size()，则将传入的数组作为容器存放集合数据
+            2.如果 array.length &gt; list.size()，将传入的数组作为容器存放集合数据，同时会将 array[list.size()] 置为null
+            3.如果 array.length &lt; list.size()，则重新生成一个数组返回，原数组元素均为null
+         */
+        Integer[] x = new Integer[3];
+        Integer[] y = new Integer[5];
+        Integer[] z = new Integer[7];
+        list.toArray(x);
+        list.toArray(y);
+        list.toArray(z);
+        System.out.println(Arrays.toString(x)); // [null, null, null]
+        System.out.println(Arrays.toString(y)); // [1, 2, 3, 4, 5]
+        System.out.println(Arrays.toString(z)); // [1, 2, 3, 4, 5, null, null]
+    }
+</code></pre>
 </div>
-</div>
+
+
     </div>
 
     

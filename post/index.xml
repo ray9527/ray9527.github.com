@@ -2,21 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on zray 的博客</title>
-    <link>http://ray9527.github.io/post/</link>
+    <link>https://ray9527.github.io/post/</link>
     <description>Recent content in Posts on zray 的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 May 2018 10:56:03 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jun 2018 15:42:50 +0800</lastBuildDate>
     
-	<atom:link href="http://ray9527.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ray9527.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>集合转数组 toArray 方法注意点</title>
+      <link>https://ray9527.github.io/post/20180606/first/</link>
+      <pubDate>Wed, 06 Jun 2018 15:42:50 +0800</pubDate>
+      
+      <guid>https://ray9527.github.io/post/20180606/first/</guid>
+      <description>&lt;p&gt;集合转数组 toArray 方法注意点：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>学习路径</title>
-      <link>http://ray9527.github.io/post/second/</link>
+      <link>https://ray9527.github.io/post/20180523/second/</link>
       <pubDate>Wed, 23 May 2018 10:56:03 +0800</pubDate>
       
-      <guid>http://ray9527.github.io/post/second/</guid>
+      <guid>https://ray9527.github.io/post/20180523/second/</guid>
       <description>&lt;p&gt;记录下自己当前在工作中还需要学习的东西：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +35,10 @@
     
     <item>
       <title>for循环的几种形式</title>
-      <link>http://ray9527.github.io/post/first/</link>
+      <link>https://ray9527.github.io/post/20180514/first/</link>
       <pubDate>Mon, 14 May 2018 17:33:12 +0800</pubDate>
       
-      <guid>http://ray9527.github.io/post/first/</guid>
+      <guid>https://ray9527.github.io/post/20180514/first/</guid>
       <description>&lt;p&gt;比较了下普通for循环、iterator循环、增强for循环，主要看下增强for循环的原理：
 &lt;/p&gt;</description>
     </item>
