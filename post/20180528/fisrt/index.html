@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>for循环的几种形式 &middot; zray 的博客</title>
+  <title>brew command not found &middot; zray 的博客</title>
 
   
   <link type="text/css" rel="stylesheet" href="https://ray9527.github.io/css/print.css" media="print">
@@ -49,56 +49,46 @@
 
     <div class="content container">
     <div class="post">
-  <h1>for循环的几种形式</h1>
-  <span class="post-date">Mon, May 14, 2018</span>
-  <p>比较了下普通for循环、iterator循环、增强for循环，主要看下增强for循环的原理：
-</p>
+  <h1>brew command not found</h1>
+  <span class="post-date">Mon, May 28, 2018</span>
+  <p>brew command not found 问题记录：</p>
 
-<pre><code class="language-java">public static void main(String[] args) {
-    List&lt;Integer&gt; list = new ArrayList&lt;&gt;();
-    list.add(1);
-    list.add(2);
-    list.add(3);
-    //普通for循环
-    for (int i = 0;i &lt; list.size(); i++) {
-        System.out.println(list.get(i));
-    }
-    //iterator循环
-    for (Iterator i = list.iterator(); i.hasNext();) {
-        System.out.println(i.next());
-    }
-    //增强for循环
-    for (Integer i : list) {
-        System.out.println(i);
-    }
-}
-</code></pre>
+<p>
+  本来安装好了brew和hugo，刚装好的时候命令使用都是正常的。这两天莫名其妙的都报“command not found ”,搜了下网上的内容，大致记录下：</p>
 
-<p>编译后的代码：</p>
-
-<pre><code class="language-java">public static void main(String[] args) {
-        for(int i = 0; i &lt; list.size(); ++i) {
-            System.out.println(list.get(i));
-        }
-
-        Iterator var3 = list.iterator();
-
-        while(var3.hasNext()) {
-            System.out.println(var3.next());
-        }
-
-        var3 = list.iterator();
-
-        while(var3.hasNext()) {
-            Integer i1 = (Integer)var3.next();
-            System.out.println(i1);
-        }
-
-    }
-</code></pre>
+<ul>
+<li>查看 <code>.bash_profile</code> 文件中是否保存了brew命令的路径</li>
+</ul>
 
 <blockquote>
-<p>可以看到增强for循环底层还是根据iterator来实现的</p>
+<p>vim ~/.bash_profile</p>
+</blockquote>
+
+<p>如果报 permission denied 可以用 <strong>sudo vim ~/.bash_profile</strong> ，sudo 命令需要管理员密码</p>
+
+<ul>
+<li>查看配置文件发现没有如下命令</li>
+</ul>
+
+<blockquote>
+<p>#brew <br>
+export PATH=$PATH:/usr/local/bin</p>
+</blockquote>
+
+<p>如果没有即将上述路径添加到.bash_profile文件中。
+<strong>其中有个小的注意点，如果你的文件中已经有其他Path添加路径，需要将新添加的路径放在其后面；否则的话上述的命令要改为以下命令，是将其作为首路径</strong></p>
+
+<blockquote>
+<p>#brew <br/>
+export PATH=/usr/local/bin:$PATH</p>
+</blockquote>
+
+<ul>
+<li>修改完成后需要重启.bash_profile</li>
+</ul>
+
+<blockquote>
+<p>source ~/.bash_profile</p>
 </blockquote>
 </div>
 

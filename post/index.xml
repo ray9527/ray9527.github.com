@@ -6,12 +6,15 @@
     <description>Recent content in Posts on zray 的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+
     <lastBuildDate>Wed, 06 Jun 2018 15:42:50 +0800</lastBuildDate>
+
     
 	<atom:link href="https://ray9527.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+
       <title>集合转数组 toArray 方法注意点</title>
       <link>https://ray9527.github.io/post/20180606/first/</link>
       <pubDate>Wed, 06 Jun 2018 15:42:50 +0800</pubDate>
@@ -20,6 +23,14 @@
       <description>&lt;p&gt;集合转数组 toArray 方法注意点：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+
+      <title>brew command not found</title>
+      <link>https://ray9527.github.io/post/20180528/fisrt/</link>
+      <pubDate>Mon, 28 May 2018 23:26:52 +0800</pubDate>
+      
+      <guid>https://ray9527.github.io/post/20180528/fisrt/</guid>
+      <description>&lt;p&gt;brew command not found 问题记录：&lt;/p&gt;</description>
+
     </item>
     
     <item>
